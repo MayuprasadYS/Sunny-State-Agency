@@ -534,15 +534,119 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.fixed {
+  position: fixed;
 }
 
-.text-center {
-  text-align: center;
+.z-\[160\] {
+  z-index: 160;
 }
 
-.text-blue-900 {
+.m-auto {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[110px\] {
+  height: 110px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.scale-75 {
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.nav {
+  position: relative;
+  margin-right: 60px;
+  white-space: nowrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 15px;
+  letter-spacing: 0.025em;
+}
+
+.nav:hover {
   --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.nav::after {
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 1px;
+  width: 0;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  transition-duration: 300ms;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.nav:hover::after {
+  width: 100%;
+}
+
+@font-face {
+  font-family: NH.65Md;
+
+  src: url(/fonts/NHaasGroteskTXPro-65Md.ttf);
+}
+
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased
+}
+
+body,
+html {
+  background-color: #000;
+  color: #fff;
+  font-family: hellix-regular;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden
+}
+
+a {
+  color: inherit;
+  text-decoration: none
 }

@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: NH.65Md;
+    src: url(/fonts/NHaasGroteskTXPro-65Md.ttf);
+}
+
+
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased
+}
+
+body,
+html {
+    background-color: #000;
+    color: #fff;
+    font-family: hellix-regular;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+@layer utilities {
+    .nav{
+        @apply relative mr-[60px] font-mono text-[15px] tracking-wide whitespace-nowrap hover:text-white
+    }
+
+    .nav::after {
+        @apply content-[''] bg-white h-[1px] w-[0] left-0 rounded-xl absolute -bottom-[1px] duration-300
+    }
+
+    .nav:hover::after {
+        @apply w-[100%]
+    }
+}
