@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: NH.65Md;
-    src: url(/fonts/NHaasGroteskTXPro-65Md.ttf);
+    font-family: NH-Md65;
+    src: url(../fonts/NHaasGroteskTXPro-65Md.ttf);
+}
+@font-face {
+    font-family: h-semiBold;
+    src: url(../fonts/Hellix-SemiBold.ttf);
+}
+@font-face {
+    font-family: NH-Rd55;
+    src: url(../fonts/NHaasGroteskTXPro-55Rg.ttf);
 }
 
 
@@ -33,9 +41,26 @@ a {
     text-decoration: none
 }
 
+.menu.active {
+    display: inline-block;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
 @layer utilities {
     .nav{
-        @apply relative mr-[60px] font-mono text-[15px] tracking-wide whitespace-nowrap hover:text-white
+        @apply relative mr-[60px] uppercase font-custom1  text-[12px] tracking-wide whitespace-nowrap hover:text-white
     }
 
     .nav::after {
@@ -46,3 +71,27 @@ a {
         @apply w-[100%]
     }
 }
+
+@layer utilities {
+    .B-grade{
+        @apply font-custom1  text-[12px] text-[#262626] bg-[#fff] w-[160px] h-[45px] flex items-center justify-center rounded-[32px] whitespace-nowrap transition-all duration-[0.3s] ease-out
+    }
+
+    .B-grade:hover {
+        @apply bg-[#343232] text-[#fff] 
+    }
+
+    .bar {
+        @apply w-[30px] h-[3px] bg-[#fff] mt-[3px] mb-[3px]
+    }
+
+    .border1 {
+        @apply p-[8px] font-[40px] font-custom1 leading-[120%]
+        border-t-2
+    }
+
+    .container {
+        @apply max-w-[1794px] w-[95%] m-auto overflow-hidden
+    }
+}
+

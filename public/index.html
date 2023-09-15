@@ -10,25 +10,87 @@
 </head>
 <body>
     <div>
-        <div class="w-95  m-auto overflow-hidden z-[160] " >
-            <header class="bg-transparent fixed">
-                <nav class="bg-transparent fixed h-[110px] z-[160] w-95">
+        <div class="w-95  m-auto overflow-hidden " >
+            <header class="bg-transparent fixed w-95 z-[160]">
+                <nav class="bg-transparent fixed h-[110px] z-[160] w-95 max-sm:hidden">
                     <div class="flex justify-between items-center h-full">
-        
                         <a href="#">
                             <img class="transform scale-75" src="../images/SSA-logo.svg" alt="home logo">
                         </a>
-                        
                         <div class="flex items-center">
-                            <a class="nav" href="#Who-are-we">WHO ARE WE</a>
+                            <a class="nav" href="#Who-are-we">who are we</a>
                             <a class="nav" href="#Creaters">CREATORS</a>
                             <a class="nav " href="#Services">SERVICES</a>
-                            <P>GET IN TOUCH</P>
+                            <P class="B-grade">GET IN TOUCH &nbsp;➡</P>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="flex w-full sm:hidden">
+                    <div class="flex  w-full">
+                        <div>
+                            <a href="#">
+                                <img class="transform scale-75" src="/images/SSA-logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="w-95">
+                            <div class="flex flex-col cursor-pointer p-[10px] m-[10px] float-right" id="menu-toggle1">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                            <nav class="hidden float-right pt-[30px] h-full menu" id="menu1">
+                                <ul>
+                                    <li class="border1"><a href="#Who-are-we">WHO ARE WE</a></li>
+                                    <li class="border1"><a href="#Creaters">CREATORS</a></li>
+                                    <li class="border1 border-b-2"><a href="#Services">SERVICES</a></li>
+                                </ul>
+                                <p class="B-grade mt-4 ">GET IN TOUCH &nbsp;➡</p>
+                            </nav>                        
                         </div>
                     </div>
                 </nav>
             </header>
+            <main>
+                <div>
+                    <section class="w-screen h-screen relative -z-[0]">
+                        <div class="w-full h-screen fixed left-0 -z-[2]">
+                            <div class="w-full h-full relative -z-[3]">
+                                <div class="container h-full flex justify-end flex-col pb-[8%] relative -z-[4]">
+                                    <h1  class="text-[70px] font-custom2 w-[75%] leading-[100%]">
+                                        <div class="overflow-hidden">
+                                            We Optimize & Monetize
+                                        </div>
+                                        <div class="overflow-hidden pb-[10px]">
+                                            Your Existing Content Using
+                                        </div>
+                                        <div class="overflow-hidden pb-[10px]">
+                                            Data-Driven Technology
+                                        </div>
+                                    </h1>
+                                    <p class="text-[15px] font-custom3 pt-[2%] pb-[2%] w-[55%] leading-[140%]">
+                                        We are experts in optimizing, localizing, and monetizing your existing content and unlocking your full potential with no additional work involved on your end.
+                                    </p>
+                                    <p class="B-grade"> GET IN TOUCH &nbsp;➡</p>
+                                </div>
+                            </div>
+                            <video class="object-cover absolute -z-[10]  h-full w-full top-0 left-0 right-0 bottom-0" autoplay plays-inline loop muted>
+                                <source src="/video/introVid.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </section>
+                </div>
+            </main>
         </div>
     </div>
+    <script>
+        const menuToggle = document.querySelector('#menu-toggle1');
+        const menu = document.querySelector('#menu1');
+
+
+        menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        });
+
+    </script>
 </body>
 </html>
