@@ -14,6 +14,14 @@
     font-family: NH-Rd55;
     src: url(../fonts/NHaasGroteskTXPro-55Rg.ttf);
 }
+@font-face {
+    font-family: h-light;
+    src: url(../fonts/Hellix-Light.ttf);
+}
+@font-face {
+    font-family: h-regular;
+    src: url(../fonts/Hellix-Regular.ttf);
+}
 
 
 *,
@@ -44,6 +52,30 @@ a {
 .menu.active {
     display: inline-block;
 }
+
+.input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 18px;
+    font-family: custom5;
+    color: #1f1f24
+}
+
+.modal--hidden {
+    display: none;
+}
+
+.hover-text {
+    display: none;
+}
+
+.logo:hover + .hover-text {
+    display: block;
+  }
+
 
 @media (min-aspect-ratio: 16/9) {
     .back-video {

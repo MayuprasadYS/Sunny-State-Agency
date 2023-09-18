@@ -10,6 +10,8 @@ module.exports = {
         custom1 : ['NH-Md65'],
         custom2 : ['h-semiBold'],
         custom3 : ['NH-RD55'],
+        custom4 : ['h-light'],
+        custom5 : ['h-regular'],
       },
     },
   },
