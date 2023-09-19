@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/SSA-logo.svg">
     <title>Sunny State Agency-Data-Driven Technology</title>
     <meta name="description" content="Sunny State Agency is a global data-driven monetization company that specifies in revamping your existing content and optimizing that to each specific ...">
 </head>
 <body>
     <div>
-        <div class="w-95  m-auto overflow-hidden " >
+        <div >
             <header class="bg-transparent fixed w-95 z-[160]">
                 <nav class="bg-transparent fixed h-[110px] z-[160] w-95 max-sm:hidden">
                     <div class="flex justify-between items-center h-full">
                         <div class="flex items-center">
-                            <div class="logo">
+                            <div class="logo ml-[20px]">
                             <a href="#">
                                 <img class="transform scale-75" src="../images/SSA-logo.svg" alt="home logo">
                             </a>
@@ -87,10 +87,10 @@
             </header>
             <main>
                 <div>
-                    <section class="w-screen h-screen relative -z-[0] max-sm:h-auto">
-                        <div class="w-full h-screen fixed left-0 -z-[2] max-sm:static max-sm:h-full">
-                            <div class="w-full h-full relative -z-[3]">
-                                <div class="container h-full flex justify-end flex-col pb-[8%] relative -z-[4] max-sm:pb-[15%]">
+                    <section style="transform: translate3d(0px,0px,0px);" class="w-screen h-screen relative max-sm:h-auto">
+                        <div class="w-full h-screen fixed left-0  max-sm:static max-sm:h-full">
+                            <div class="w-full h-full relative z-[2]">
+                                <div class="container h-full flex justify-end flex-col pb-[8%] max-sm:pb-[15%]">
                                     <h1  class="text-[70px] font-custom2 w-[75%] leading-[100%] max-sm:text-[55px] max-sm:pt-[230px] max-sm:w-full">
                                         <div class="overflow-hidden max-sm:pb-0">
                                             We Optimize & Monetize
@@ -113,41 +113,55 @@
                             </video>
                         </div>
                     </section>
+                    <section id="stats" class="w-full bg-[#000] text-[#fff] relative z-[5] mt-[-10px] pb-[200px]">
+                        <div class="border-t-2 border-solid border-gray-700 border-b-2 border-solid border-[#707070] pt-[20px] pb-[20px]">
+                            <div class="flex flex-row  w-full overflow-hidden">
+                                <div class="text-wrapper">
+                                    <p>SUNNY STATS.</p>
+                                    <p>SUNNY STATS.</p>
+                                    <p>SUNNY STATS.</p>
+                                    <p>SUNNY STATS.</p>
+                                    <p>SUNNY STATS.</p>
+                                    <p>SUNNY STATS.</p>
+                                    <p>SUNNY STATS.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container mt-[-2px]">
+                            <div class="flex justify-between">
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
+                                    <h2 class="totalnum">1 Billion+</h2>
+                                    <p class="para">Monthly</p>
+                                    <p class="para">Story Views</p>
+                                </div>
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
+                                    <h2 class="totalnum">50 Million+</h2>
+                                    <p class="para">Unique</p>
+                                    <p class="para">Audience</p>
+                                </div>
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
+                                    <h2 class="totalnum">50 +</h2>
+                                    <p class="para">Creators</p>
+                                    <p class="para">We Represent</p>
+                                </div>
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
+                                    <h2 class="totalnum">2 Billion+</h2>
+                                    <p class="para">Monthly</p>
+                                    <p class="para">Video Views</p>
+                                </div>
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
+                                    <h2 class="totalnum">30 +</h2>
+                                    <p class="para">Countries</p>
+                                    <p class="para">Reached</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </main>
         </div>
     </div>
-    <script>
-        const menuToggle = document.querySelector('#menu-toggle1');
-        const menu = document.querySelector('#menu1');
-
-
-        menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        });
-
-        const toggleModal = () => {
-            document.querySelector('.modal')
-            .classList.toggle('modal--hidden');
-        };
-
-        document.querySelector('.enquiryForm')
-          .addEventListener('click', toggleModal);
-        document.querySelector('.enquiryForm1')
-          .addEventListener('click', toggleModal);
-        document.querySelector('.enquiryForm2')
-          .addEventListener('click', toggleModal);
-
-        document.querySelector('#learn-more')
-            .addEventListener('submit', (event) => {
-                event.preventDefault();
-                toggleModal();
-            });
-
-        document.querySelector('.modal-close-bar span')
-            .addEventListener('click' ,toggleModal);
-            document.querySelector('.enquiryForm').value = '';
-
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>

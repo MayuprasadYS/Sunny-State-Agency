@@ -12,6 +12,7 @@ module.exports = {
         custom3 : ['NH-RD55'],
         custom4 : ['h-light'],
         custom5 : ['h-regular'],
+        custom6 : ['h-bold'],
       },
     },
   },

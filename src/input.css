@@ -22,6 +22,10 @@
     font-family: h-regular;
     src: url(../fonts/Hellix-Regular.ttf);
 }
+@font-face {
+    font-family: h-bold;
+    src: url(../fonts/Hellix-Bold.ttf);
+}
 
 
 *,
@@ -76,6 +80,30 @@ a {
     display: block;
   }
 
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text-wrapper p {
+    font-size: 80px;
+    font-family: h-bold;
+    white-space: nowrap;
+    margin-right: 35px;
+    animation: move-rtl 45000ms linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-500%);
+    }
+}
+
 
 @media (min-aspect-ratio: 16/9) {
     .back-video {
@@ -124,6 +152,14 @@ a {
 
     .container {
         @apply max-w-[1794px] w-[95%] m-auto overflow-hidden
+    }
+
+    .totalnum {
+        @apply text-[#843cf3] whitespace-nowrap text-[45px] font-custom6 pb-[10px] 
+    }
+
+    .para {
+        @apply text-[20px] font-custom5 pb-[5px]
     }
 }
 
