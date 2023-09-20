@@ -13,6 +13,7 @@ module.exports = {
         custom4 : ['h-light'],
         custom5 : ['h-regular'],
         custom6 : ['h-bold'],
+        custom7 : ['h-semiBold'],
       },
     },
   },

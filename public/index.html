@@ -11,7 +11,7 @@
 <body>
     <div>
         <div >
-            <header class="bg-transparent fixed w-95 z-[160]">
+            <header class="bg-transparent fixed w-95 z-[160] top-0">
                 <nav class="bg-transparent fixed h-[110px] z-[160] w-95 max-sm:hidden">
                     <div class="flex justify-between items-center h-full">
                         <div class="flex items-center">
@@ -38,7 +38,7 @@
                             </a>
                         </div>
                         <div class="w-95">
-                            <div class="flex flex-col cursor-pointer p-[10px] m-[10px] float-right" id="menu-toggle1">
+                            <div class="flex flex-col cursor-pointer p-[10px] m-[10px] float-right bg-black rounded-full" id="menu-toggle1">
                                 <div class="bar"></div>
                                 <div class="bar"></div>
                                 <div class="bar"></div>
@@ -87,7 +87,7 @@
             </header>
             <main>
                 <div>
-                    <section style="transform: translate3d(0px,0px,0px);" class="w-screen h-screen relative max-sm:h-auto">
+                    <section style="transform: translate3d(0px,0px,0px);" class="w-screen h-screen fixed top-0 max-sm:h-auto">
                         <div class="w-full h-screen fixed left-0  max-sm:static max-sm:h-full">
                             <div class="w-full h-full relative z-[2]">
                                 <div class="container h-full flex justify-end flex-col pb-[8%] max-sm:pb-[15%]">
@@ -113,8 +113,8 @@
                             </video>
                         </div>
                     </section>
-                    <section id="stats" class="w-full bg-[#000] text-[#fff] relative z-[5] mt-[-10px] pb-[200px]">
-                        <div class="border-t-2 border-solid border-gray-700 border-b-2 border-solid border-[#707070] pt-[20px] pb-[20px]">
+                    <section id="stats" class="w-full bg-[#000] text-[#fff] relative z-[5] mt-[707px] pb-[200px] max-sm:pb-[60px] max-sm:mt-[845px]">
+                        <div class="border-t-2 border-solid border-[#707070] border-b-2 border-solid border-[#707070] pt-[20px] pb-[20px] max-sm:border-b-0">
                             <div class="flex flex-row  w-full overflow-hidden">
                                 <div class="text-wrapper">
                                     <p>SUNNY STATS.</p>
@@ -129,31 +129,72 @@
                         </div>
 
                         <div class="container mt-[-2px]">
-                            <div class="flex justify-between">
-                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
-                                    <h2 class="totalnum">1 Billion+</h2>
+                            <div class="flex justify-between max-sm:flex-wrap max-sm:pt-[5%]">
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px] max-sm:w-[43%] max-sm:pb-[12%]">
+                                    <h2 class="totalnum ">1 Billion+</h2>
                                     <p class="para">Monthly</p>
                                     <p class="para">Story Views</p>
                                 </div>
-                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px] max-sm:w-[43%] max-sm:pb-[12%]">
                                     <h2 class="totalnum">50 Million+</h2>
                                     <p class="para">Unique</p>
                                     <p class="para">Audience</p>
                                 </div>
-                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px] max-sm:w-[43%] max-sm:pb-[12%]">
                                     <h2 class="totalnum">50 +</h2>
                                     <p class="para">Creators</p>
                                     <p class="para">We Represent</p>
                                 </div>
-                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px] max-sm:w-[43%] max-sm:pb-[12%]">
                                     <h2 class="totalnum">2 Billion+</h2>
                                     <p class="para">Monthly</p>
                                     <p class="para">Video Views</p>
                                 </div>
-                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px]">
+                                <div class="w-[15%] border-t-2 border-solid border-[#843cf3] pt-[35px] max-sm:w-[43%] max-sm:pb-[12%]">
                                     <h2 class="totalnum">30 +</h2>
                                     <p class="para">Countries</p>
                                     <p class="para">Reached</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="w-full relative z-[5] bg-[#1c1c1c]">
+                        <div class="container pt-[70px] pb-[70px] max-sm:pt-[70px] max-sm:pb-[70px]">
+                            <h1 class="text-[75px] font-custom7 leading-[100%] max-sm:text-[55px] leading-[110%]">
+                                Plateforms <br> We Monetize On
+                            </h1>
+                            <div class="pt-[70px] grid grid-flow-col  gap-[3%] max-sm:pt-[50px] max-sm:flex max-sm:flex-col">
+                                <div class="platforms hover:bg-[#fffc00] change1 max-sm:pad">
+                                    <div class="mb-[20px] h-[30px] transition-all duration-300 ease-out">
+                                        <img class="block opacity-100" src="/images/platforms/snapchat-white.svg" alt="SCW">
+                                        <img class="hidden opacity-0" src="/images/platforms/snapchat-black.svg" alt="SCB">
+                                    </div>
+                                    <h2 class="s-4-main">Snap Discover Show</h2>
+                                    <p class="s-4-para">We are working closely with Snap and are pitching top talent that we think can do well on a Discover Show, and when we manage to get the show approved we facilitate the entire process of running such a show the best way possible, which includes, re-editing and optimization of your existing (YouTube) content the best way possible, a-b testing multiple thumbnails and analyzing data. There is no additional work involved on your end and you will remain a 100% owner of the channel we help establish.</p>
+                                </div>
+                                <div class="platforms change hover:bg-[rgb(24,119,242)] max-sm:pad">
+                                    <div class="mb-[20px] h-[30px] transition-all duration-300 ease-out">
+                                        <img class="block opacity-100" src="/images/platforms/facebook-blue.svg" alt="FBB">
+                                        <img class="hidden opacity-0" src="/images/platforms/facebook-white.svg" alt="FBW">
+                                    </div>
+                                    <h2 class="s-4-main">Official Facebook Media Partners</h2>
+                                    <p class="s-4-para">Understanding that each platform needs a unique approach to maximize results is something we take very seriously. We will unlock a new revenue stream for you by tailoring your content specifically to what works best on Facebook. Your short-form content has lots of value on Facebook Reels and other bonus features you probably haven’t heard of.</p>
+                                </div>
+                                <div class="platforms change hover:bg-gradient-to-tr from-[rgb(135,241,233)] to-[rgb(218,14,79)] max-sm:pad">
+                                    <div class="mb-[20px] h-[30px] transition-all duration-300 ease-out">
+                                        <img class="block opacity-100" src="/images/platforms/tiktok-white.svg" alt="TTW">
+                                        <img class="hidden opacity-0" src="/images/platforms/tiktok-pink.svg" alt="TTP">
+                                    </div>
+                                    <h2 class="s-4-main">TikTok Creator Fund</h2>
+                                    <p class="s-4-para">We all know that short-form content is here to stay but it’s also difficult to turn your hobby into a new revenue stream. We help you localize and monetize this short-form content by repurposing your content for YouTube Shorts, Snap, and Facebook Reels.</p>
+                                </div>
+                                <div class="platforms change hover:bg-red-600 max-sm:pad">
+                                    <div class="mb-[20px] h-[30px] transition-all duration-300 ease-out">
+                                        <img class="block opacity-100" src="/images/platforms/youtube-red.svg" alt="YTR">
+                                        <img class="hidden opacity-0" src="/images/platforms/youtube-black.svg" alt="YTB">
+                                    </div>
+                                    <h2 class="s-4-main">YouTube Editing</h2>
+                                    <p class="s-4-para">We can become your one-stop shop as we are experts in editing long-form content too and are able to turn your (raw) footage into an engaging video that will lock viewers in and secure a high average watch time to maximize results.</p>
                                 </div>
                             </div>
                         </div>
