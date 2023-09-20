@@ -1318,7 +1318,11 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  overflow-x: hidden
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
