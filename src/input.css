@@ -184,6 +184,10 @@ a {
     overflow: hidden;
 }
 
+.bar-bottom::-webkit-scrollbar {
+    display: none;
+}
+
 @media only screen and (min-width:320px)and (max-width:664px) {
     .text-wrapper p {
         font-size: 60px;
@@ -282,7 +286,7 @@ a {
     }
 
     .videogallery {
-        @apply ml-[15px] mr-[15px] rounded-[30px] overflow-hidden border-[7px] border-[#363535] transition-all duration-300 ease-out  hover:border-[#000] hover:shadow-2xl
+        @apply ml-[15px] mr-[15px] rounded-[30px] overflow-hidden border-[7px] border-[#363535] transition-all duration-300 ease-out  hover:border-[#000] hover:shadow-2xl max-sm:min-w-[80%] max-sm:ml-[10px] max-sm:mr-[10px] 
     }
 
     .video {
