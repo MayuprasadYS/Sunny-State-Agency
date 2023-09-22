@@ -302,5 +302,25 @@ a {
     .img-cont {
         @apply absolute w-full h-full inset-0 z-[1] opacity-100 transition-opacity duration-[400ms] ease-in-out
     }
+
+    .serviceitem {
+        @apply flex justify-between items-center pb-[10%] 
+    }
+
+    .services__content {
+        @apply ml-[4%] mr-[4%] max-w-[35%]
+    }
+
+    .desc {
+        @apply max-w-[50%] mr-[4%] ml-[4%]
+    }
+
+    .desc-h2 {
+        @apply text-[55px] font-custom2 leading-[110%] pb-[4%] whitespace-pre-line
+    }
+
+    .desc-p {
+        @apply text-[18px] font-custom5 text-[#9a9a9a] leading-[160%]
+    }
 }
 
