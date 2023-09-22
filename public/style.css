@@ -588,6 +588,10 @@ video {
   left: 0px;
 }
 
+.left-\[50\%\] {
+  left: 50%;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -602,6 +606,10 @@ video {
 
 .z-\[160\] {
   z-index: 160;
+}
+
+.z-\[1\] {
+  z-index: 1;
 }
 
 .z-\[2000\] {
@@ -638,6 +646,10 @@ video {
 
 .mr-\[-24rem\] {
   margin-right: -24rem;
+}
+
+.mr-\[5\%\] {
+  margin-right: 5%;
 }
 
 .mr-\[50px\] {
@@ -756,6 +768,15 @@ video {
   width: 100vw;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
+.translate-x-\[-50\%\] {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-y-\[20px\] {
   --tw-translate-y: 20px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -818,6 +839,10 @@ video {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .whitespace-pre-line {
@@ -932,6 +957,10 @@ video {
   padding-bottom: 20px;
 }
 
+.pb-\[300px\] {
+  padding-bottom: 300px;
+}
+
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
@@ -1042,6 +1071,10 @@ video {
 
 .font-custom5 {
   font-family: h-regular;
+}
+
+.font-custom6 {
+  font-family: h-bold;
 }
 
 .font-custom7 {
@@ -1487,7 +1520,7 @@ body,
 html {
   background-color: #000;
   color: #fff;
-  font-family: hellix-regular;
+  font-family: h-regular;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -1632,6 +1665,15 @@ a {
 
 .bar-bottom::-webkit-scrollbar {
   display: none;
+}
+
+.qvthb {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
 }
 
 @media only screen and (min-width:320px)and (max-width:664px) {

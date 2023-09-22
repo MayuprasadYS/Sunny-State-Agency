@@ -45,7 +45,7 @@ body,
 html {
     background-color: #000;
     color: #fff;
-    font-family: hellix-regular;
+    font-family: h-regular;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -186,6 +186,15 @@ a {
 
 .bar-bottom::-webkit-scrollbar {
     display: none;
+}
+
+.qvthb {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 @media only screen and (min-width:320px)and (max-width:664px) {
