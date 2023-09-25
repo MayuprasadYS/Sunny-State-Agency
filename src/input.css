@@ -275,7 +275,7 @@ a {
     };
 
     .s-4-main {
-        @apply text-[27px] font-custom7 mb-[15px] pr-[3%] text-[#fff] transition-all duration-300 ease-out leading-[120%] max-sm:text-[36px] max-sm:leading-[110%]
+        @apply text-[27px] font-custom7 mb-[15px] pr-[3%] text-[#fff] transition-all duration-300 ease-out leading-[120%] max-sm:text-[36px] max-sm:leading-[110%] 
     }
 
     .s-4-para {
