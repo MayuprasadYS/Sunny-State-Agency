@@ -304,23 +304,27 @@ a {
     }
 
     .serviceitem {
-        @apply flex justify-between items-center pb-[10%] 
+        @apply flex justify-between items-center pb-[10%] max-sm:flex-col max-sm:items-start
     }
 
     .services__content {
-        @apply ml-[4%] mr-[4%] max-w-[35%]
+        @apply ml-[4%] mr-[4%] max-w-[35%] max-sm:max-w-full max-sm:h-full max-sm:object-cover max-sm:object-center max-sm:ml-[10%]
     }
 
     .desc {
-        @apply max-w-[50%] mr-[4%] ml-[4%]
+        @apply max-w-[50%] mr-[4%] ml-[4%] max-sm:max-w-[100%] max-sm:m-0
     }
 
     .desc-h2 {
-        @apply text-[55px] font-custom2 leading-[110%] pb-[4%] whitespace-pre-line
+        @apply text-[55px] font-custom2 leading-[110%] pb-[4%] whitespace-pre-line max-sm:text-[40px]
     }
 
     .desc-p {
-        @apply text-[18px] font-custom5 text-[#9a9a9a] leading-[160%]
+        @apply text-[18px] font-custom5 text-[#9a9a9a] leading-[160%] max-sm:text-[18px]
+    }
+
+    .list-item {
+        @apply text-[18px] font-custom5 leading-[180%] whitespace-pre-line list-disc max-sm:text-[18px]
     }
 }
 
